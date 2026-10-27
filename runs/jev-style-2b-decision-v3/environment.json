@@ -1,0 +1,219 @@
+{
+  "parts": {
+    "jev-style-2b-decision-v3": {
+      "engine": "jev_engine_torch:JevStyleTorchEngine",
+      "engine_options": {
+        "model": "2b",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d"
+      },
+      "model_source": {
+        "model": "Jev-Style-2B-Decision-v3",
+        "hf_repo": "chaoliangUNSW/Jev-Style-2B-Decision-v3",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "snapshot": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "runtime_sha256": "5ecba24cdfff4f0e043c2ea48c9c7f514907c6804f265906e21dec0f1b20dbd6",
+        "manifest_verified": {
+          "checked": 14,
+          "bad": [],
+          "missing_ignored": []
+        },
+        "device": "cuda",
+        "dtype": "float32",
+        "template": "macjev-render-v2-long-options",
+        "context_limit": 25600,
+        "head_max": null,
+        "temperature": "global (category=None) = None",
+        "no_truncation": true,
+        "option_filtering": false,
+        "per_benchmark_prompts": false
+      },
+      "torch": "2.11.0+cu128",
+      "transformers": "5.17.0",
+      "device": "cuda",
+      "flash_linear_attention": "0.5.2",
+      "causal_conv1d": null,
+      "gpu": "NVIDIA L4",
+      "cuda": "12.8",
+      "tf32_matmul": false,
+      "loaded_seconds": 29.204926662999924,
+      "frozen_corpus_sha256": "41f720ca9b3647465d673e5bab56776e23635b36a54808fb597bc81e6d8e7824",
+      "rows_path": [
+        "/content/di/suite-0.2.1-full/selected-rows.jsonl.gz",
+        "/content/di/suite-0.2.1-full/added-rows.jsonl.gz"
+      ],
+      "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+      "latency": "In-process request wall time (CUDA synchronized): rendering + the runtime's decide_many (state computed once per request); excludes model loading."
+    },
+    "jev-style-2b-decision-v3.shard0": {
+      "engine": "jev_engine_torch:JevStyleTorchEngine",
+      "engine_options": {
+        "model": "2b",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d"
+      },
+      "model_source": {
+        "model": "Jev-Style-2B-Decision-v3",
+        "hf_repo": "chaoliangUNSW/Jev-Style-2B-Decision-v3",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "snapshot": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "runtime_sha256": "5ecba24cdfff4f0e043c2ea48c9c7f514907c6804f265906e21dec0f1b20dbd6",
+        "manifest_verified": {
+          "checked": 14,
+          "bad": [],
+          "missing_ignored": []
+        },
+        "device": "cuda",
+        "dtype": "float32",
+        "template": "macjev-render-v2-long-options",
+        "context_limit": 25600,
+        "head_max": null,
+        "temperature": "global (category=None) = None",
+        "no_truncation": true,
+        "option_filtering": false,
+        "per_benchmark_prompts": false
+      },
+      "torch": "2.11.0+cu128",
+      "transformers": "5.17.0",
+      "device": "cuda",
+      "flash_linear_attention": "0.5.2",
+      "causal_conv1d": null,
+      "gpu": "NVIDIA L4",
+      "cuda": "12.8",
+      "tf32_matmul": false,
+      "loaded_seconds": 29.929604790000667,
+      "frozen_corpus_sha256": null,
+      "rows_path": "/content/di/shards/jev-style-2b-decision-v3.shard0.rows.jsonl.gz",
+      "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+      "latency": "In-process request wall time (CUDA synchronized): rendering + the runtime's decide_many (state computed once per request); excludes model loading."
+    },
+    "jev-style-2b-decision-v3.shard1a": {
+      "engine": "jev_engine_torch:JevStyleTorchEngine",
+      "engine_options": {
+        "model": "2b",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d"
+      },
+      "model_source": {
+        "model": "Jev-Style-2B-Decision-v3",
+        "hf_repo": "chaoliangUNSW/Jev-Style-2B-Decision-v3",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "snapshot": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "runtime_sha256": "5ecba24cdfff4f0e043c2ea48c9c7f514907c6804f265906e21dec0f1b20dbd6",
+        "manifest_verified": {
+          "checked": 14,
+          "bad": [],
+          "missing_ignored": []
+        },
+        "device": "cuda",
+        "dtype": "float32",
+        "template": "macjev-render-v2-long-options",
+        "context_limit": 25600,
+        "head_max": null,
+        "temperature": "global (category=None) = None",
+        "no_truncation": true,
+        "option_filtering": false,
+        "per_benchmark_prompts": false
+      },
+      "torch": "2.11.0+cu128",
+      "transformers": "5.17.0",
+      "device": "cuda",
+      "flash_linear_attention": "0.5.2",
+      "causal_conv1d": null,
+      "gpu": "NVIDIA L4",
+      "cuda": "12.8",
+      "tf32_matmul": false,
+      "loaded_seconds": 27.38243373100022,
+      "frozen_corpus_sha256": null,
+      "rows_path": "/content/di/shards/jev-style-2b-decision-v3.shard1a.rows.jsonl.gz",
+      "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+      "latency": "In-process request wall time (CUDA synchronized): rendering + the runtime's decide_many (state computed once per request); excludes model loading."
+    },
+    "jev-style-2b-decision-v3.shard1b": {
+      "engine": "jev_engine_torch:JevStyleTorchEngine",
+      "engine_options": {
+        "model": "2b",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d"
+      },
+      "model_source": {
+        "model": "Jev-Style-2B-Decision-v3",
+        "hf_repo": "chaoliangUNSW/Jev-Style-2B-Decision-v3",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "snapshot": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "runtime_sha256": "5ecba24cdfff4f0e043c2ea48c9c7f514907c6804f265906e21dec0f1b20dbd6",
+        "manifest_verified": {
+          "checked": 14,
+          "bad": [],
+          "missing_ignored": []
+        },
+        "device": "cuda",
+        "dtype": "float32",
+        "template": "macjev-render-v2-long-options",
+        "context_limit": 25600,
+        "head_max": null,
+        "temperature": "global (category=None) = None",
+        "no_truncation": true,
+        "option_filtering": false,
+        "per_benchmark_prompts": false
+      },
+      "torch": "2.11.0+cu128",
+      "transformers": "5.17.0",
+      "device": "cuda",
+      "flash_linear_attention": "0.5.2",
+      "causal_conv1d": null,
+      "gpu": "NVIDIA L4",
+      "cuda": "12.8",
+      "tf32_matmul": false,
+      "loaded_seconds": 28.525996967000538,
+      "frozen_corpus_sha256": null,
+      "rows_path": "/content/di/shards/jev-style-2b-decision-v3.shard1b.rows.jsonl.gz",
+      "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+      "latency": "In-process request wall time (CUDA synchronized): rendering + the runtime's decide_many (state computed once per request); excludes model loading."
+    },
+    "jev-style-2b-decision-v3.shard2": {
+      "engine": "jev_engine_torch:JevStyleTorchEngine",
+      "engine_options": {
+        "model": "2b",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d"
+      },
+      "model_source": {
+        "model": "Jev-Style-2B-Decision-v3",
+        "hf_repo": "chaoliangUNSW/Jev-Style-2B-Decision-v3",
+        "revision": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "snapshot": "fbb9d676753876bb8285c725ee8c16253af45e3d",
+        "runtime_sha256": "5ecba24cdfff4f0e043c2ea48c9c7f514907c6804f265906e21dec0f1b20dbd6",
+        "manifest_verified": {
+          "checked": 14,
+          "bad": [],
+          "missing_ignored": []
+        },
+        "device": "cuda",
+        "dtype": "float32",
+        "template": "macjev-render-v2-long-options",
+        "context_limit": 25600,
+        "head_max": null,
+        "temperature": "global (category=None) = None",
+        "no_truncation": true,
+        "option_filtering": false,
+        "per_benchmark_prompts": false
+      },
+      "torch": "2.11.0+cu128",
+      "transformers": "5.17.0",
+      "device": "cuda",
+      "flash_linear_attention": "0.5.2",
+      "causal_conv1d": null,
+      "gpu": "NVIDIA L4",
+      "cuda": "12.8",
+      "tf32_matmul": false,
+      "loaded_seconds": 27.92785209000067,
+      "frozen_corpus_sha256": null,
+      "rows_path": "/content/di/shards/jev-style-2b-decision-v3.shard2.rows.jsonl.gz",
+      "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+      "latency": "In-process request wall time (CUDA synchronized): rendering + the runtime's decide_many (state computed once per request); excludes model loading."
+    }
+  },
+  "rows_per_part": {
+    "jev-style-2b-decision-v3.shard1b": 10429,
+    "jev-style-2b-decision-v3": 87750,
+    "jev-style-2b-decision-v3.shard0": 21624,
+    "jev-style-2b-decision-v3.shard2": 25211,
+    "jev-style-2b-decision-v3.shard1a": 5745
+  }
+}

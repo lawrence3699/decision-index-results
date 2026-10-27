@@ -1,0 +1,415 @@
+{
+ "engine": "macjev.eval.di_v4:V4TextEngine",
+ "engine_options": {
+  "model": "runs/h3-seed1/final/hf",
+  "device": "cuda",
+  "precision": "bf16",
+  "fast": true
+ },
+ "model_source": {
+  "kind": "macjev-v4-export",
+  "path": "runs/h3-seed1/final/hf",
+  "run": "v4-main-colab-seed1",
+  "selected": "soup",
+  "base": "Qwen/Qwen3.5-2B",
+  "template": "macjev-render-v2-long-options",
+  "mask_mode": "block",
+  "layout": "sb",
+  "temperatures": {
+   "global": 0.7734836880351792,
+   "choice": 0.7698498587261627,
+   "noul": 0.824717362670051,
+   "score": 0.583566330184863
+  },
+  "engine": "macjev-v4-reference-1",
+  "weights_digest": "d03c41b67e4205b3"
+ },
+ "runtime": {
+  "device": "cuda",
+  "precision": "bf16",
+  "torch": "2.14.1+cu130",
+  "total_context_limit": 32768,
+  "max_pixels": 1638400,
+  "batch_tokens": 65536,
+  "load_seconds": 7.22,
+  "cuda_device": "NVIDIA A100-SXM4-80GB",
+  "fast_text": true
+ },
+ "loaded_seconds": 11.388229131000116,
+ "frozen_corpus_sha256": "b2282cd57423132e5d4dc6379134e8bb4fe620c881a1e7d533f07cd446d541d1",
+ "rows_path": [
+  "di/suite-0.3/selected-rows.jsonl.gz",
+  "di/suite-0.3/added-rows.jsonl.gz",
+  "di/suite-0.3/gsm8k-rows.jsonl.gz"
+ ],
+ "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+ "latency": "In-process request wall time: systemone request -> RendererV2 rows (one per question) -> the state blocks once (block attention, cached) -> every question's blocks on that cache (batched) -> per-qtype temperature; excludes model loading.",
+ "shards": [
+  {
+   "dir": "shard-0",
+   "shard": {
+    "shard": 0,
+    "of": 5,
+    "by": "sha256(group_id) % of",
+    "rows": "full suite",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    }
+   },
+   "environment": {
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "engine_options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    },
+    "model_source": {
+     "kind": "macjev-v4-export",
+     "path": "runs/h3-seed1/final/hf",
+     "run": "v4-main-colab-seed1",
+     "selected": "soup",
+     "base": "Qwen/Qwen3.5-2B",
+     "template": "macjev-render-v2-long-options",
+     "mask_mode": "block",
+     "layout": "sb",
+     "temperatures": {
+      "global": 0.7734836880351792,
+      "choice": 0.7698498587261627,
+      "noul": 0.824717362670051,
+      "score": 0.583566330184863
+     },
+     "engine": "macjev-v4-reference-1",
+     "weights_digest": "d03c41b67e4205b3"
+    },
+    "runtime": {
+     "device": "cuda",
+     "precision": "bf16",
+     "torch": "2.14.1+cu130",
+     "total_context_limit": 32768,
+     "max_pixels": 1638400,
+     "batch_tokens": 65536,
+     "load_seconds": 7.22,
+     "cuda_device": "NVIDIA A100-SXM4-80GB",
+     "fast_text": true
+    },
+    "loaded_seconds": 11.388229131000116,
+    "frozen_corpus_sha256": "b2282cd57423132e5d4dc6379134e8bb4fe620c881a1e7d533f07cd446d541d1",
+    "rows_path": [
+     "di/suite-0.3/selected-rows.jsonl.gz",
+     "di/suite-0.3/added-rows.jsonl.gz",
+     "di/suite-0.3/gsm8k-rows.jsonl.gz"
+    ],
+    "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+    "latency": "In-process request wall time: systemone request -> RendererV2 rows (one per question) -> the state blocks once (block attention, cached) -> every question's blocks on that cache (batched) -> per-qtype temperature; excludes model loading."
+   },
+   "status": {
+    "time": "2026-10-26T22:49:58.323853+00:00",
+    "event": "complete",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "completed": 28170,
+    "counts": {
+     "ok": 27646
+    },
+    "elapsed_seconds": 5722.6
+   }
+  },
+  {
+   "dir": "shard-1",
+   "shard": {
+    "shard": 1,
+    "of": 5,
+    "by": "sha256(group_id) % of",
+    "rows": "full suite",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    }
+   },
+   "environment": {
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "engine_options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    },
+    "model_source": {
+     "kind": "macjev-v4-export",
+     "path": "runs/h3-seed1/final/hf",
+     "run": "v4-main-colab-seed1",
+     "selected": "soup",
+     "base": "Qwen/Qwen3.5-2B",
+     "template": "macjev-render-v2-long-options",
+     "mask_mode": "block",
+     "layout": "sb",
+     "temperatures": {
+      "global": 0.7734836880351792,
+      "choice": 0.7698498587261627,
+      "noul": 0.824717362670051,
+      "score": 0.583566330184863
+     },
+     "engine": "macjev-v4-reference-1",
+     "weights_digest": "d03c41b67e4205b3"
+    },
+    "runtime": {
+     "device": "cuda",
+     "precision": "bf16",
+     "torch": "2.14.1+cu130",
+     "total_context_limit": 32768,
+     "max_pixels": 1638400,
+     "batch_tokens": 65536,
+     "load_seconds": 6.56,
+     "cuda_device": "NVIDIA A100-SXM4-80GB",
+     "fast_text": true
+    },
+    "loaded_seconds": 10.707003823001287,
+    "frozen_corpus_sha256": "b2282cd57423132e5d4dc6379134e8bb4fe620c881a1e7d533f07cd446d541d1",
+    "rows_path": [
+     "di/suite-0.3/selected-rows.jsonl.gz",
+     "di/suite-0.3/added-rows.jsonl.gz",
+     "di/suite-0.3/gsm8k-rows.jsonl.gz"
+    ],
+    "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+    "latency": "In-process request wall time: systemone request -> RendererV2 rows (one per question) -> the state blocks once (block attention, cached) -> every question's blocks on that cache (batched) -> per-qtype temperature; excludes model loading."
+   },
+   "status": {
+    "time": "2026-10-26T22:49:23.484310+00:00",
+    "event": "complete",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "completed": 27736,
+    "counts": {
+     "ok": 27281
+    },
+    "elapsed_seconds": 5673.4
+   }
+  },
+  {
+   "dir": "shard-2",
+   "shard": {
+    "shard": 2,
+    "of": 5,
+    "by": "sha256(group_id) % of",
+    "rows": "full suite",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    }
+   },
+   "environment": {
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "engine_options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    },
+    "model_source": {
+     "kind": "macjev-v4-export",
+     "path": "runs/h3-seed1/final/hf",
+     "run": "v4-main-colab-seed1",
+     "selected": "soup",
+     "base": "Qwen/Qwen3.5-2B",
+     "template": "macjev-render-v2-long-options",
+     "mask_mode": "block",
+     "layout": "sb",
+     "temperatures": {
+      "global": 0.7734836880351792,
+      "choice": 0.7698498587261627,
+      "noul": 0.824717362670051,
+      "score": 0.583566330184863
+     },
+     "engine": "macjev-v4-reference-1",
+     "weights_digest": "d03c41b67e4205b3"
+    },
+    "runtime": {
+     "device": "cuda",
+     "precision": "bf16",
+     "torch": "2.14.1+cu130",
+     "total_context_limit": 32768,
+     "max_pixels": 1638400,
+     "batch_tokens": 65536,
+     "load_seconds": 6.55,
+     "cuda_device": "NVIDIA A100-SXM4-80GB",
+     "fast_text": true
+    },
+    "loaded_seconds": 10.720419801999014,
+    "frozen_corpus_sha256": "b2282cd57423132e5d4dc6379134e8bb4fe620c881a1e7d533f07cd446d541d1",
+    "rows_path": [
+     "di/suite-0.3/selected-rows.jsonl.gz",
+     "di/suite-0.3/added-rows.jsonl.gz",
+     "di/suite-0.3/gsm8k-rows.jsonl.gz"
+    ],
+    "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+    "latency": "In-process request wall time: systemone request -> RendererV2 rows (one per question) -> the state blocks once (block attention, cached) -> every question's blocks on that cache (batched) -> per-qtype temperature; excludes model loading."
+   },
+   "status": {
+    "time": "2026-10-26T22:51:33.953759+00:00",
+    "event": "complete",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "completed": 28341,
+    "counts": {
+     "ok": 27857
+    },
+    "elapsed_seconds": 5788.4
+   }
+  },
+  {
+   "dir": "shard-3",
+   "shard": {
+    "shard": 3,
+    "of": 5,
+    "by": "sha256(group_id) % of",
+    "rows": "full suite",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    }
+   },
+   "environment": {
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "engine_options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    },
+    "model_source": {
+     "kind": "macjev-v4-export",
+     "path": "runs/h3-seed1/final/hf",
+     "run": "v4-main-colab-seed1",
+     "selected": "soup",
+     "base": "Qwen/Qwen3.5-2B",
+     "template": "macjev-render-v2-long-options",
+     "mask_mode": "block",
+     "layout": "sb",
+     "temperatures": {
+      "global": 0.7734836880351792,
+      "choice": 0.7698498587261627,
+      "noul": 0.824717362670051,
+      "score": 0.583566330184863
+     },
+     "engine": "macjev-v4-reference-1",
+     "weights_digest": "d03c41b67e4205b3"
+    },
+    "runtime": {
+     "device": "cuda",
+     "precision": "bf16",
+     "torch": "2.14.1+cu130",
+     "total_context_limit": 32768,
+     "max_pixels": 1638400,
+     "batch_tokens": 65536,
+     "load_seconds": 6.66,
+     "cuda_device": "NVIDIA A100-SXM4-80GB",
+     "fast_text": true
+    },
+    "loaded_seconds": 10.814275255999746,
+    "frozen_corpus_sha256": "b2282cd57423132e5d4dc6379134e8bb4fe620c881a1e7d533f07cd446d541d1",
+    "rows_path": [
+     "di/suite-0.3/selected-rows.jsonl.gz",
+     "di/suite-0.3/added-rows.jsonl.gz",
+     "di/suite-0.3/gsm8k-rows.jsonl.gz"
+    ],
+    "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+    "latency": "In-process request wall time: systemone request -> RendererV2 rows (one per question) -> the state blocks once (block attention, cached) -> every question's blocks on that cache (batched) -> per-qtype temperature; excludes model loading."
+   },
+   "status": {
+    "time": "2026-10-26T22:49:31.164020+00:00",
+    "event": "complete",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "completed": 28083,
+    "counts": {
+     "ok": 27600
+    },
+    "elapsed_seconds": 5648.9
+   }
+  },
+  {
+   "dir": "shard-4",
+   "shard": {
+    "shard": 4,
+    "of": 5,
+    "by": "sha256(group_id) % of",
+    "rows": "full suite",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    }
+   },
+   "environment": {
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "engine_options": {
+     "model": "runs/h3-seed1/final/hf",
+     "device": "cuda",
+     "precision": "bf16",
+     "fast": true
+    },
+    "model_source": {
+     "kind": "macjev-v4-export",
+     "path": "runs/h3-seed1/final/hf",
+     "run": "v4-main-colab-seed1",
+     "selected": "soup",
+     "base": "Qwen/Qwen3.5-2B",
+     "template": "macjev-render-v2-long-options",
+     "mask_mode": "block",
+     "layout": "sb",
+     "temperatures": {
+      "global": 0.7734836880351792,
+      "choice": 0.7698498587261627,
+      "noul": 0.824717362670051,
+      "score": 0.583566330184863
+     },
+     "engine": "macjev-v4-reference-1",
+     "weights_digest": "d03c41b67e4205b3"
+    },
+    "runtime": {
+     "device": "cuda",
+     "precision": "bf16",
+     "torch": "2.14.1+cu130",
+     "total_context_limit": 32768,
+     "max_pixels": 1638400,
+     "batch_tokens": 65536,
+     "load_seconds": 6.69,
+     "cuda_device": "NVIDIA A100-SXM4-80GB",
+     "fast_text": true
+    },
+    "loaded_seconds": 10.901676712999688,
+    "frozen_corpus_sha256": "b2282cd57423132e5d4dc6379134e8bb4fe620c881a1e7d533f07cd446d541d1",
+    "rows_path": [
+     "di/suite-0.3/selected-rows.jsonl.gz",
+     "di/suite-0.3/added-rows.jsonl.gz",
+     "di/suite-0.3/gsm8k-rows.jsonl.gz"
+    ],
+    "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+    "latency": "In-process request wall time: systemone request -> RendererV2 rows (one per question) -> the state blocks once (block attention, cached) -> every question's blocks on that cache (batched) -> per-qtype temperature; excludes model loading."
+   },
+   "status": {
+    "time": "2026-10-26T22:50:46.837162+00:00",
+    "event": "complete",
+    "engine": "macjev.eval.di_v4:V4TextEngine",
+    "completed": 28290,
+    "counts": {
+     "ok": 27786
+    },
+    "elapsed_seconds": 5708.8
+   }
+  }
+ ],
+ "note": "results.jsonl = the concatenated results of len(shards) processes, each running the kit's own decision_index.runner.run over the rows whose sha256(group_id) % of == shard; lines are unmodified. Latency fields were measured with the shards sharing one GPU, so they overstate single-process latency."
+}

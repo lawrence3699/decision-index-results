@@ -1,0 +1,276 @@
+{
+ "parts": {
+  "runs/vision/v4-bf16": {
+   "engine": "macjev.eval.di_v4:V4VisionEngine",
+   "engine_options": {
+    "model": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_tokens": 32768
+   },
+   "model_source": {
+    "kind": "macjev-v4-export",
+    "path": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "run": "v4-main-colab-seed1",
+    "selected": "soup",
+    "base": "Qwen/Qwen3.5-2B",
+    "template": "macjev-render-v2-long-options",
+    "mask_mode": "block",
+    "layout": "sb",
+    "temperatures": {
+     "global": 0.7734836880351792,
+     "choice": 0.7698498587261627,
+     "noul": 0.824717362670051,
+     "score": 0.583566330184863
+    },
+    "engine": "macjev-v4-reference-1",
+    "weights_digest": "d03c41b67e4205b3"
+   },
+   "runtime": {
+    "device": "cuda",
+    "precision": "bf16",
+    "torch": "2.14.1+cu130",
+    "total_context_limit": 32768,
+    "max_pixels": 1638400,
+    "batch_tokens": 32768,
+    "load_seconds": 8.16,
+    "cuda_device": "NVIDIA A100-SXM4-80GB"
+   },
+   "loaded_seconds": 13.83241659000032,
+   "rows_path": "/content/jev-v4/di/work/vision/vision-rows.jsonl",
+   "rows_sha256": "f5f1cfb5cd92ab48d4d14919dff9c56963f4bbbed483bdd45a4f102dba87c133",
+   "latency": "Batched per set (the kit's chunk): per-row time = batch wall time / rows; images capped at 1.6 MP, processed by the export's own image processor; excludes model loading."
+  },
+  "runs/vision/v4-bf16-shards/shard-0-of-1": {
+   "engine": "macjev.eval.di_v4:V4VisionEngine",
+   "engine_options": {
+    "model": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_tokens": 32768
+   },
+   "model_source": {
+    "kind": "macjev-v4-export",
+    "path": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "run": "v4-main-colab-seed1",
+    "selected": "soup",
+    "base": "Qwen/Qwen3.5-2B",
+    "template": "macjev-render-v2-long-options",
+    "mask_mode": "block",
+    "layout": "sb",
+    "temperatures": {
+     "global": 0.7734836880351792,
+     "choice": 0.7698498587261627,
+     "noul": 0.824717362670051,
+     "score": 0.583566330184863
+    },
+    "engine": "macjev-v4-reference-1",
+    "weights_digest": "d03c41b67e4205b3"
+   },
+   "runtime": {
+    "device": "cuda",
+    "precision": "bf16",
+    "torch": "2.14.1+cu130",
+    "total_context_limit": 32768,
+    "max_pixels": 1638400,
+    "batch_tokens": 32768,
+    "load_seconds": 6.97,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "fast_text": false
+   },
+   "loaded_seconds": 12.88593612600016,
+   "rows_path": "/content/jev-v4/di/work/vision-shards/shard-0-of-1.jsonl",
+   "rows_sha256": "cd175fa6c57e53e0d92d1b622f7efe1a221dcb8aaf4fdfa1560ec3c50aae4d81",
+   "latency": "Batched per set (the kit's chunk): per-row time = batch wall time / rows; images capped at 1.6 MP, processed by the export's own image processor; excludes model loading."
+  },
+  "runs/vision/v4-bf16-shards/shard-0-of-4": {
+   "engine": "macjev.eval.di_v4:V4VisionEngine",
+   "engine_options": {
+    "model": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_tokens": 32768
+   },
+   "model_source": {
+    "kind": "macjev-v4-export",
+    "path": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "run": "v4-main-colab-seed1",
+    "selected": "soup",
+    "base": "Qwen/Qwen3.5-2B",
+    "template": "macjev-render-v2-long-options",
+    "mask_mode": "block",
+    "layout": "sb",
+    "temperatures": {
+     "global": 0.7734836880351792,
+     "choice": 0.7698498587261627,
+     "noul": 0.824717362670051,
+     "score": 0.583566330184863
+    },
+    "engine": "macjev-v4-reference-1",
+    "weights_digest": "d03c41b67e4205b3"
+   },
+   "runtime": {
+    "device": "cuda",
+    "precision": "bf16",
+    "torch": "2.14.1+cu130",
+    "total_context_limit": 32768,
+    "max_pixels": 1638400,
+    "batch_tokens": 32768,
+    "load_seconds": 6.25,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "fast_text": false
+   },
+   "loaded_seconds": 12.169446358999267,
+   "rows_path": "/content/jev-v4/di/work/vision-shards/shard-0-of-4.jsonl",
+   "rows_sha256": "52ec1a37c03821ed2dca05ab356825bd82e53c3ade6edfb477a5eb961083c96a",
+   "latency": "Batched per set (the kit's chunk): per-row time = batch wall time / rows; images capped at 1.6 MP, processed by the export's own image processor; excludes model loading.",
+   "effective_image_budget": {
+    "max_image_pixels": 1638400,
+    "max_image_tokens": 1600,
+    "rows_with_image_tokens": 1397
+   }
+  },
+  "runs/vision/v4-bf16-shards/shard-1-of-4": {
+   "engine": "macjev.eval.di_v4:V4VisionEngine",
+   "engine_options": {
+    "model": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_tokens": 32768
+   },
+   "model_source": {
+    "kind": "macjev-v4-export",
+    "path": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "run": "v4-main-colab-seed1",
+    "selected": "soup",
+    "base": "Qwen/Qwen3.5-2B",
+    "template": "macjev-render-v2-long-options",
+    "mask_mode": "block",
+    "layout": "sb",
+    "temperatures": {
+     "global": 0.7734836880351792,
+     "choice": 0.7698498587261627,
+     "noul": 0.824717362670051,
+     "score": 0.583566330184863
+    },
+    "engine": "macjev-v4-reference-1",
+    "weights_digest": "d03c41b67e4205b3"
+   },
+   "runtime": {
+    "device": "cuda",
+    "precision": "bf16",
+    "torch": "2.14.1+cu130",
+    "total_context_limit": 32768,
+    "max_pixels": 1638400,
+    "batch_tokens": 32768,
+    "load_seconds": 6.2,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "fast_text": false
+   },
+   "loaded_seconds": 12.104035652000675,
+   "rows_path": "/content/jev-v4/di/work/vision-shards/shard-1-of-4.jsonl",
+   "rows_sha256": "1d575cc4af250d0c4cb0200fd4830343cf17c85308e20684515feea1782f8762",
+   "latency": "Batched per set (the kit's chunk): per-row time = batch wall time / rows; images capped at 1.6 MP, processed by the export's own image processor; excludes model loading.",
+   "effective_image_budget": {
+    "max_image_pixels": 1638400,
+    "max_image_tokens": 1600,
+    "rows_with_image_tokens": 1411
+   }
+  },
+  "runs/vision/v4-bf16-shards/shard-2-of-4": {
+   "engine": "macjev.eval.di_v4:V4VisionEngine",
+   "engine_options": {
+    "model": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_tokens": 32768
+   },
+   "model_source": {
+    "kind": "macjev-v4-export",
+    "path": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "run": "v4-main-colab-seed1",
+    "selected": "soup",
+    "base": "Qwen/Qwen3.5-2B",
+    "template": "macjev-render-v2-long-options",
+    "mask_mode": "block",
+    "layout": "sb",
+    "temperatures": {
+     "global": 0.7734836880351792,
+     "choice": 0.7698498587261627,
+     "noul": 0.824717362670051,
+     "score": 0.583566330184863
+    },
+    "engine": "macjev-v4-reference-1",
+    "weights_digest": "d03c41b67e4205b3"
+   },
+   "runtime": {
+    "device": "cuda",
+    "precision": "bf16",
+    "torch": "2.14.1+cu130",
+    "total_context_limit": 32768,
+    "max_pixels": 1638400,
+    "batch_tokens": 32768,
+    "load_seconds": 6.33,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "fast_text": false
+   },
+   "loaded_seconds": 12.215041105999262,
+   "rows_path": "/content/jev-v4/di/work/vision-shards/shard-2-of-4.jsonl",
+   "rows_sha256": "507c44ccffd8ca659525a73bbbbe5a9492b53532d13b50556946e07615c22c09",
+   "latency": "Batched per set (the kit's chunk): per-row time = batch wall time / rows; images capped at 1.6 MP, processed by the export's own image processor; excludes model loading.",
+   "effective_image_budget": {
+    "max_image_pixels": 1638400,
+    "max_image_tokens": 1600,
+    "rows_with_image_tokens": 1327
+   }
+  },
+  "runs/vision/v4-bf16-shards/shard-3-of-4": {
+   "engine": "macjev.eval.di_v4:V4VisionEngine",
+   "engine_options": {
+    "model": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_tokens": 32768
+   },
+   "model_source": {
+    "kind": "macjev-v4-export",
+    "path": "/content/jev-v4/runs/h3-seed1/final/hf",
+    "run": "v4-main-colab-seed1",
+    "selected": "soup",
+    "base": "Qwen/Qwen3.5-2B",
+    "template": "macjev-render-v2-long-options",
+    "mask_mode": "block",
+    "layout": "sb",
+    "temperatures": {
+     "global": 0.7734836880351792,
+     "choice": 0.7698498587261627,
+     "noul": 0.824717362670051,
+     "score": 0.583566330184863
+    },
+    "engine": "macjev-v4-reference-1",
+    "weights_digest": "d03c41b67e4205b3"
+   },
+   "runtime": {
+    "device": "cuda",
+    "precision": "bf16",
+    "torch": "2.14.1+cu130",
+    "total_context_limit": 32768,
+    "max_pixels": 1638400,
+    "batch_tokens": 32768,
+    "load_seconds": 6.29,
+    "cuda_device": "NVIDIA A100-SXM4-80GB",
+    "fast_text": false
+   },
+   "loaded_seconds": 12.195582804000878,
+   "rows_path": "/content/jev-v4/di/work/vision-shards/shard-3-of-4.jsonl",
+   "rows_sha256": "b52d7441bec63cbbec0ea58a00c7ed3def4d0a994844a11b77274963e0435b67",
+   "latency": "Batched per set (the kit's chunk): per-row time = batch wall time / rows; images capped at 1.6 MP, processed by the export's own image processor; excludes model loading.",
+   "effective_image_budget": {
+    "max_image_pixels": 1638400,
+    "max_image_tokens": 1600,
+    "rows_with_image_tokens": 1426
+   }
+  }
+ },
+ "note": "the kit's vision runner, unchanged, in several parts: the main `vision pipeline` run, then the rows not yet answered split by sha256(row id) mod N, one process each on the same GPU; every row id exactly once"
+}
